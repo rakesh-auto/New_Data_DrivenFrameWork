@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="5">
+    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/IdeaProjects/clone2/Framework_automation">
+        <classes>
+            <class name="testcase.HomeTest">
+                <methods>
+                    <include name="VerifyTheDiscoverMoreBtn"/>
+                    <include name="VerifyTheDiscountEmailOffer"/>
+                    <include name="VerifyThePrivacyBtn"/>
+                    <include name="VerifyTheDropdownOfShopBtn"/>
+                    <include name="VerifyScrollToTheProduct"/>
+                    <include name="verifyLogo"/>
+                </methods>
+            </class>
+            <class name="testcase.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithValidUsernameAndValidPassword"/>
+                    <include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
+                    <include name="verifyLoginWithInValidUsernameAndInvalidValidPassword"/>
+                    <include name="verifyLoginWithInValidUsernameAndInValidPassword"/>
+                </methods>
+            </class>
+            <class name="testcase.MyAccountTest">
+                <methods>
+                    <include name="verifyTheToolTipOrder"/>
+                    <include name="verifyTheToolTipSubscription"/>
+                    <include name="verifyTheOrderDetail"/>
+                </methods>
+            </class>
+            <class name="testcase.NewsTest">
+                <methods>
+                    <include name="verifyTheNewsPageOfProduct"/>
+                </methods>
+            </class>
+            <class name="testcase.OrdersTest">
+                <methods>
+                    <include name="verifyTheProductAddToCart"/>
+                </methods>
+            </class>
+            <class name="testcase.RegisterTest">
+                <methods>
+                    <include name="verifyRegisterWithValidEmailAndValidPassword"/>
+                    <include name="verifyRegisterWithInValidEmailAndValidPassword"/>
+                </methods>
+            </class>
+            <class name="testcase.ShopTest">
+                <methods>
+                    <include name="VerifyDropdownOfShortedBy"/>
+                    <include name="verifyTheClickOnProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
