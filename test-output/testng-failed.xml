@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="C:/Users/LENOVO/IdeaProjects/clone2/Framework_automation(failed)">
+    <classes>
+      <class name="testcase.ShopTest">
+        <methods>
+          <include name="VerifyDropdownOfShortedBy"/>
+          <include name="tearDown"/>
+          <include name="preRequisite"/>
+        </methods>
+      </class> <!-- testcase.ShopTest -->
+      <class name="testcase.HomeTest">
+        <methods>
+          <include name="VerifyThePrivacyBtn"/>
+          <include name="VerifyTheDiscountEmailOffer"/>
+          <include name="verifyLogo"/>
+          <include name="VerifyTheDiscoverMoreBtn"/>
+          <include name="tearDown"/>
+          <include name="VerifyTheDropdownOfShopBtn"/>
+          <include name="VerifyScrollToTheProduct"/>
+          <include name="preRequisite"/>
+        </methods>
+      </class> <!-- testcase.HomeTest -->
+      <class name="testcase.LoginTest">
+        <methods>
+          <include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
+          <include name="verifyLoginWithInValidUsernameAndInvalidValidPassword"/>
+          <include name="verifyLoginWithValidUsernameAndValidPassword"/>
+          <include name="preRequisite"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInValidUsernameAndInValidPassword"/>
+        </methods>
+      </class> <!-- testcase.LoginTest -->
+      <class name="testcase.NewsTest">
+        <methods>
+          <include name="preRequisite"/>
+          <include name="verifyTheNewsPageOfProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.NewsTest -->
+      <class name="testcase.MyAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preRequisite"/>
+          <include name="verifyTheToolTipOrder"/>
+          <include name="verifyTheToolTipSubscription"/>
+          <include name="verifyTheOrderDetail"/>
+        </methods>
+      </class> <!-- testcase.MyAccountTest -->
+      <class name="testcase.OrdersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyTheProductAddToCart"/>
+          <include name="preRequisite"/>
+        </methods>
+      </class> <!-- testcase.OrdersTest -->
+      <class name="testcase.RegisterTest">
+        <methods>
+          <include name="verifyRegisterWithValidEmailAndValidPassword"/>
+          <include name="verifyRegisterWithInValidEmailAndValidPassword"/>
+          <include name="preRequisite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.RegisterTest -->
+    </classes>
+  </test> <!-- C:/Users/LENOVO/IdeaProjects/clone2/Framework_automation(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

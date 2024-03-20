@@ -1,0 +1,1 @@
+{"uuid":"46f17821-a3aa-44d4-aa21-34f0d66c8b75","name":"Framework_automation","children":["b883603e-5430-4c4a-8a8b-ee3a84178ff7"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1710424352111,"stop":1710424352732}],"start":1710424321885,"stop":1710424352734}
