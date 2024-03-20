@@ -16,6 +16,10 @@ public class ActionUtil extends WebTestBase {
         Actions clickEle=new Actions(driver);
         clickEle.click(element);
     }
+    public static void doubleClickToElementCommand(WebElement element){
+        Actions clickEle=new Actions(driver);
+        clickEle.click(element);
+    }
 
 
 
