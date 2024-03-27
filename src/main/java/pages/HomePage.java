@@ -56,6 +56,10 @@ public class HomePage extends WebTestBase {
     @FindBy(xpath = "//h6[@class='article-inner-content-header-category']")
     WebElement imgOFDiscoverBtn;
 
+    @FindBy(xpath = "//ul[@class='sub-menu']//child::li")
+    List<WebElement> ourStoryDrp;
+    @FindBy(xpath = "//a[text()='Our Story']")
+    WebElement ourStoryElement;
 
 
 
@@ -125,6 +129,12 @@ public boolean isDisplayOfDiscoverMoreText(){
     }
     public  boolean logoOfBrandIsDisplay() {
       return WebElementUtil.isDisplay(logoElement);
+    }
+
+    public void clickOnOurStoryBtn(){
+        ActionUtil.moveToElementCommand(ourStoryElement);
+
+
     }
 
 

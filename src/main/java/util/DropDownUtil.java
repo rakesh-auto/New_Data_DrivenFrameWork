@@ -7,7 +7,7 @@ import testbase.WebTestBase;
 import java.util.List;
 
 public class DropDownUtil extends WebTestBase {
-Select select;
+
     public static void selectDropDownByVisibleText(WebElement element,String visibleText){
         Select dropdown=new Select(element);
         dropdown.selectByVisibleText(visibleText);
@@ -26,6 +26,10 @@ Select select;
     public void deselectDropDownByVisibleText(WebElement element,String visibleText){
         Select dropdown=new Select(element);
         dropdown.deselectByVisibleText(visibleText);
+
+    }
+
+    public void bootStrapDrp(){
 
     }
 }

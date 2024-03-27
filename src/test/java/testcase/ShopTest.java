@@ -1,5 +1,6 @@
 package testcase;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -60,5 +61,6 @@ public void verifyTheClickOnProduct(){
     @AfterTest
     public void tearDown(){
         driver.close();
+
     }
 }
