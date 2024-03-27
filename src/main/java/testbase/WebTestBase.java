@@ -1,5 +1,9 @@
 package testbase;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,6 +17,9 @@ import java.util.Properties;
 public class WebTestBase {
     public Properties prop;
     public static WebDriver driver;
+    public ExtentSparkReporter htmlReporter;
+   public  ExtentReports reports;
+   public ExtentTest test;
 
     public WebTestBase() {
         FileInputStream fileInputStream = null; //DECLARE GENERIC
@@ -58,5 +65,26 @@ public class WebTestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WebDriverUtil.IMPLICIT_WAIT));
         driver.manage().deleteAllCookies();
 
-    }}
+    }
+    public void extendRepo(){
+        htmlReporter=new ExtentSparkReporter( "Extent Report Html" );
+        reports=new ExtentReports();
+        reports.attachReporter(htmlReporter);
+
+        // setup environment
+        reports.setSystemInfo("Machine","TestPC");
+        reports.setSystemInfo("Tester","Rakesh");
+
+        //setting look and feel of report
+        htmlReporter.config().setDocumentTitle("Campos Coffee web page Test");
+        htmlReporter.config().setReportName("Test Report");
+        htmlReporter.config().setTheme(Theme.STANDARD);
+        htmlReporter.config().setTimeStampFormat("EEEE,MMMM dd,hh:mm a'('zzz')");
+    }
+    public void getResult(ITestResult ){
+
+
+    }
+
+}
 
